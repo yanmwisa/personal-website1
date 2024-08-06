@@ -1,0 +1,253 @@
+body{
+    background-color: #FEFEFE;
+    font-family: "merriweather","Geogia",Cambria, "Times New Roman","times" "serif";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"merriweather","Geogia",Cambria, "Times New Roman","times" "serif";
+} 
+
+main{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+
+section{
+    
+    margin: 40px  0px;
+}
+
+a {
+    color: #005b99;
+}
+
+a:hover {
+ text-decoration: none;
+}
+/* 
+nav{
+    background-color: lightgreen;
+}
+#presentation{
+    background-color: lightpink;
+}
+#project{
+    background-color: lightsalmon;
+}
+
+#article{
+    background-color: lightseagreen;
+}
+
+#contact{
+    background-color: lightskyblue;
+}
+footer{
+    background-color: lightgray;
+}  */
+
+/* ####### BarRe de navigation ######### */
+
+nav {
+    padding: 20px 40px;
+   
+ border-bottom: 1px solid #ececec;
+}
+
+nav .contact {
+    border: 1px solid #005b99;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav .contact:hover{
+        background-color: #005b99;
+        color: white;
+
+}
+nav a {
+    text-decoration: none;
+}
+
+nav span {
+    float: right;
+}
+
+nav span a {
+    margin-right: 5px;
+}
+
+/* #########################bare section ####################### */
+section{
+    padding: 0 300px;
+}
+
+/* ############## prensentation & competences ################## */
+
+#presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#eaf5fa ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.h1-gros{
+    font-size: 35px;
+}
+
+.aucune-marge{
+    margin: 0px;
+}
+.image_profile img {
+    border-radius: 50%;
+}
+
+/* #############   project ############ */
+
+#project .container{
+    display: flex;
+    flex-direction: column;
+}
+
+#project article {
+    display: grid;
+    grid-template-columns: auto  1fr;
+    margin-bottom: 20px;
+}
+
+.project_description{
+    padding: 0px 10px;
+}
+
+.direction-rtl {
+    direction: rtl;
+}
+
+.en-savoir-plus{
+    text-align: right;
+}
+
+  /* ######## Article ######## */
+  #article {
+    background-color:#eaf5fa ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #article article a{
+    text-decoration: none;
+  }
+
+  /* ################## Footer ############### */
+
+  footer{
+    padding: 40px ;
+    border-top: 1px solid #ececec;
+    background-color: #F8F9FA;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+  footer a svg {
+     color: black;
+     padding: 0px 2px;
+  }
+/* #### modification de l'icon UP ####### */
+  .up svg {
+    margin-left: 10px;
+  }
+
+    .up svg:hover{
+            color: #005b99;
+    }
+
+    /* ########### linkedin ######## */
+
+    .linkedin svg{
+        color:#0177B4 ;
+    }
+ 
+  footer div {
+    float: right;
+  }
+
+
+  /* jd vjdn vdjvndkvm */
+ /* Styles pour les appareils avec une largeur de vue inférieure ou égale à 480 pixels */
+/* Media Query pour les écrans petits (téléphones) */
+@media only screen and (max-width: 600px) {
+    /* Réduction de l'espace de padding dans les sections */
+    section {
+        padding: 0 10px;
+    }
+
+    /* Ajustement de la mise en page de la section de présentation */
+    #presentation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image_profile img {
+        margin-top: 20px;
+    }
+
+    /* Ajustement pour les articles de projet pour une colonne */
+    #project .container {
+        flex-direction: column;
+    }
+
+    #project article {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustement du footer */
+    footer div {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Media Query pour les écrans de taille moyenne (tablettes) */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    /* Ajustement léger de padding pour les sections */
+    section {
+        padding: 0 50px;
+    }
+
+    /* Ajustements pour la section de présentation */
+    #presentation {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    /* Ajustement pour les articles de projet pour deux colonnes */
+    #project .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #project article {
+        width: 50%;
+    }
+
+    /* Ajustement du footer */
+    footer div {
+        float: right;
+    }
+}
+
+/* Media Query pour les grands écrans (ordinateurs de bureau) */
+@media only screen and (min-width: 1201px) {
+    /* Styles actuels devraient être suffisants pour les grands écrans */
+}
